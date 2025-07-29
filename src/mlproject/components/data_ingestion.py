@@ -11,6 +11,10 @@ from dataclasses import dataclass
 from src.mlproject.components.data_transformation import DataTransformation
 from src.mlproject.components.data_transformation import DataTransformationConfig
 
+from src.mlproject.components.model_tranier import ModelTrainerConfig
+from src.mlproject.components.model_tranier import ModelTrainer
+
+
 
 @dataclass
 class DataIngestionConfig:
@@ -59,3 +63,6 @@ if __name__=="__main__":
 
     data_transformation=DataTransformation()
     train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+
+    modeltrainer=ModelTrainer()
+    print(modeltrainer.initiate_model_trainer(train_arr,test_arr))
