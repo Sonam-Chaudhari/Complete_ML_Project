@@ -3,6 +3,7 @@
 ## Overview  
 This project implements a complete Machine Learning pipeline to predict student performance indicators using various student data features.  
 It follows **best practices and industry standards** for project structure, modular programming, logging, exception handling, and deployment, making it a scalable and maintainable ML solution.
+This project is for learning purpose to understand the complete cycle of MLops and I have followed Krish naik in the learning journey.
 
 ---
 
